@@ -1,0 +1,14 @@
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.AssemblyInfoInputs.cache
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.AssemblyInfo.cs
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.csproj.CoreCompileInputs.cache
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\bin\Debug\net6.0\13dekabrtask.exe
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\bin\Debug\net6.0\13dekabrtask.deps.json
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\bin\Debug\net6.0\13dekabrtask.runtimeconfig.json
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\bin\Debug\net6.0\13dekabrtask.dll
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\bin\Debug\net6.0\13dekabrtask.pdb
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.dll
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\refint\13dekabrtask.dll
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.pdb
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.genruntimeconfig.cache
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\ref\13dekabrtask.dll
