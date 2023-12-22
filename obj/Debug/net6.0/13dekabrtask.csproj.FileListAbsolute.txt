@@ -12,3 +12,4 @@ C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\ref
 C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.pdb
 C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.genruntimeconfig.cache
 C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\ref\13dekabrtask.dll
+C:\Users\TUF\Desktop\task13dekabr\13dekabrtask\13dekabrtask\obj\Debug\net6.0\13dekabrtask.sourcelink.json

@@ -6,18 +6,47 @@ namespace _13dekabrtask
     {
         static void Main(string[] args)
         {
-           FirstMethod();
-           SecondMethod();
-           ThirdMethod();
-           FourthMethod();
-           FifthMethod();
-           SixthMethod();
-           SeventhMeth();
-           EighthMeth();
-           NinthMeth();
-           TenthMeth();
+            FirstMethod();
+            SecondMethod();
+            ThirdMethod();
+            FourthMethod();
+            FifthMethod();
+            SixthMethod();
+            SeventhMeth();
+            EighthMeth();
+            NinthMeth();
+            TenthMeth();
             EleventhMeth();
             Task12();
+            Task13();
+            Task14();
+            Task16();
+            {
+                Console.WriteLine("Metn daxil edin");
+                string text = Console.ReadLine();
+
+                string newText = "";
+                for (int i = 0; i < text.Length; i++)
+                {
+                    char currentChar = text[i];
+                    if (i % 2 == 0)
+                    {
+                        //Console.Write(char.ToUpper(currentChar));
+                        newText += Char.ToUpper(text[i]);
+
+
+                    }
+                    else
+                    {
+
+                        //Console.Write(char.ToLower(currentChar));
+                        newText += Char.ToLower(text[i]);
+                    }
+
+                }
+
+            }
+            Task14();
 
 
 
@@ -25,13 +54,13 @@ namespace _13dekabrtask
 
         }
 
-        static void FirstMethod ()
+        static void FirstMethod()
         {
-         l1:
-        Console.WriteLine("Daxilinde a ve ya b simvollarindan ibaret bir metn daxil edin:");
-        string text = Console.ReadLine();
-        char aSimvolu = 'a';
-        char bSimvolu = 'b';
+        l1:
+            Console.WriteLine("Daxilinde a ve ya b simvollarindan ibaret bir metn daxil edin:");
+            string text = Console.ReadLine();
+            char aSimvolu = 'a';
+            char bSimvolu = 'b';
             int aamount = 0;
             int bamount = 0;
 
@@ -51,7 +80,7 @@ namespace _13dekabrtask
             }
             if (aamount == 0)
             {
-                Console.WriteLine(" a simvolunun sayi 0-a beraberdir" );
+                Console.WriteLine(" a simvolunun sayi 0-a beraberdir");
                 goto l1;
             }
             if ((bamount == 0))
@@ -66,7 +95,7 @@ namespace _13dekabrtask
 
 
 
-            
+
 
 
 
@@ -81,12 +110,13 @@ namespace _13dekabrtask
 
         }
 
-        static void SecondMethod ()
+        static void SecondMethod()
         {
             Console.WriteLine("Metn daxil edin");
-            l2:
-            string text = Console.ReadLine();  
+        l2:
+            string text = Console.ReadLine();
             char aSimvolu = 'a';
+            //for (int i = 1; i < text.Length; i += 2) cutler ucun
             for (int i = 0; i < text.Length; i += 2)
             {
                 if (text[i] != aSimvolu)
@@ -95,24 +125,24 @@ namespace _13dekabrtask
                     goto l2;
                 }
             }
-                Console.WriteLine("Tek yerde duranlarin hamsi a simvoludur ");
-                
-                       
+            Console.WriteLine("Tek yerde duranlarin hamsi a simvoludur ");
+
+
 
         }
 
 
-        static void ThirdMethod () 
+        static void ThirdMethod()
         {
             Console.WriteLine("Metn daxil edin");
         l3:
             string text = Console.ReadLine();
             //Verilmish metnde sol terefden tek yerde dayanan simvollardan necesi {b} -ye beraberdir.
             char bSimvolu = 'b';
-            int  bamount = 0;
+            int bamount = 0;
             for (int i = 0; i < text.Length; i += 2)
             {
-              if ( text[i] == bSimvolu)
+                if (text[i] == bSimvolu)
                 {
                     bamount++;
                 }
@@ -126,36 +156,36 @@ namespace _13dekabrtask
 
         }
 
-        static void FourthMethod ()
+        static void FourthMethod()
         {
             Console.WriteLine("Metn daxil edin");
             string text = Console.ReadLine();
             char aSimvolu = 'a';
             int a = text.IndexOf(aSimvolu);
-            if ((a+1)% 2 == 0)
+            if ((a + 1) % 2 == 0)
             {
                 Console.WriteLine("A simvolu cut yerde yerlesir");
             }
             else
             {
                 Console.WriteLine("A simvolu tek yerde yerlesir");
-                
-                    }
+
+            }
             Console.WriteLine(" ");
 
         }
 
-        static void FifthMethod () 
+        static void FifthMethod()
         {
             Console.WriteLine("Daxilinde a,b,c  simvollari olan bir metn daxil edin:");
-            l5:
+        l5:
             // Verilmish metnde sol terefden saydiqda {a},{b},{c} simollarindan hansi birinci gelir?
             string text = Console.ReadLine();
-            int a= text.IndexOf('a');
+            int a = text.IndexOf('a');
             int b = text.IndexOf('b');
             int c = text.IndexOf('c');
 
-            if(a==-1 || b==-1 || c==-1)
+            if (a == -1 || b == -1 || c == -1)
             {
                 Console.WriteLine("Simvollardan hansisa yoxdur:");
                 goto l5;
@@ -184,16 +214,18 @@ namespace _13dekabrtask
         {
             //Verilmish metnde {a} simvolunun sol terefden ve sag terefden indexleri eydidirmi?
             string text = Console.ReadLine();
-            int a = text.IndexOf('a');
+            int a1 = text.IndexOf('a');
             int ason = text.LastIndexOf("a");
 
-            if (a == ason) 
+            if (a1 == ason)
             {
                 Console.WriteLine("a simvolunun sol ve sag terefden indexleri eynidir");
             }
-            else {
+            else
+            {
                 Console.WriteLine("a simvolunun sol ve sag terefden indexleri eyni deyil");
-                    
+
+
             }
 
             Console.WriteLine(" ");
@@ -208,27 +240,27 @@ namespace _13dekabrtask
 
         }
 
-        static void SeventhMeth () 
+        static void SeventhMeth()
         {
             Console.WriteLine("Daxilinde a,b,c simvollari olan bir metn daxil edin:");
-            l8:
+        l8:
             string text = Console.ReadLine();
 
             int a = text.IndexOf('a');
-            int b = text.LastIndexOf('b');
-            int c = text.LastIndexOf('c');
+            int b = text.IndexOf('b');
+            int c = text.IndexOf('c');
 
-            if(a==-1|| b==-1 || c == -1)
+            if (a == -1 || b == -1 || c == -1)
             {
                 Console.WriteLine("Simvollardan hansisa yoxdur!");
                 goto l8;
             }
             else
             {
-                if (a<b && b<c)
+                if (a < b && b < c)
                 {
                     Console.WriteLine("a simvolu b simvolundan qabaq ve b simvolu ise c simvolundan qabaq gelir ");
-                        }
+                }
                 else
                 {
                     Console.WriteLine("A simvolu b simvolundan qabaq b simvolu ise c simvolundan qabaq gelmelidir!");
@@ -239,21 +271,21 @@ namespace _13dekabrtask
 
         }
 
-        static void EighthMeth ()
+        static void EighthMeth()
         {
             Console.WriteLine("Metn daxil edin ");
             string text = Console.ReadLine();
             int a = text.IndexOf('a');
-            for (int i = 0; i < 10; i++) 
-            
+            for (int i = 0; i < 10; i++)
+
             {
-                Console.WriteLine(text[a+1]);
+                Console.WriteLine(text[a + 1]);
             }
             Console.WriteLine(" ");
 
         }
 
-        static void NinthMeth()
+        static void NinthMeth() //*
         {
             Console.WriteLine("Metn daxil edin");
         l9:
@@ -279,20 +311,20 @@ namespace _13dekabrtask
                 goto l9;
             }
         }
-            static void TenthMeth()
+        static void TenthMeth() //*
+        {
+            string text = Console.ReadLine();
+            string result = "";
+            foreach (char c in text)
             {
-                string text = Console.ReadLine();
-                string result = "";
-                foreach(char c in text)
-                    {
 
-                    if(char.IsLetter(c))
-                    {
-                        result += c;
-                    }
+                if (char.IsLetter(c))
+                {
+                    result += c;
                 }
-                
-                Console.WriteLine(result);
+            }
+
+            Console.WriteLine(result);
             Console.WriteLine(" ");
         }
 
@@ -301,23 +333,27 @@ namespace _13dekabrtask
             Console.WriteLine("Metn daxil edin:");
             string text = Console.ReadLine();
 
-            string deyisilmismetn = "";
+            string change = "";
             foreach (char c in text)
             {
                 if (c == 'a')
                 {
-                    deyisilmismetn += 'b';
+                    change += 'b';
                 }
-                deyisilmismetn += c;
+                if (c == 'b')
+                {
+                    change += 'a';
+                }
+                change += c;
             }
-            Console.WriteLine("Modified string : " + deyisilmismetn);
+            Console.WriteLine($"evezlenmis string:{change}");
         }
 
         static void Task12()
         {
         //12) Verilmish metinde en ilk ve en son {a} simvolundan bashqa yerde qalan butun {a} simvollarini yox et. 
         l1:
-            Console.Write("Input a text with a letters ");
+            Console.Write("Metn daxil edin:");
             string text = Console.ReadLine();
 
             Console.WriteLine(text);
@@ -343,7 +379,7 @@ namespace _13dekabrtask
 
             else
             {
-                Console.WriteLine("There is no a in the text: ");
+                Console.WriteLine("Daxil etdiyiniz metnde a simvolu yoxdur:");
                 goto l1;
             }
 
@@ -354,23 +390,84 @@ namespace _13dekabrtask
         {
             Console.WriteLine("Metn daxil edin");
             string text = Console.ReadLine();
+
+            string newText = "";
             for (int i = 0; i < text.Length; i++)
             {
                 char currentChar = text[i];
                 if (i % 2 == 0)
                 {
-                    Console.Write(char.ToUpper(currentChar));
+                    //Console.Write(char.ToUpper(currentChar));
+                    newText += Char.ToUpper(text[i]);
+
 
                 }
                 else
                 {
 
-                    Console.Write(char.ToLower(currentChar));
+                    //Console.Write(char.ToLower(currentChar));
+                    newText += Char.ToLower(text[i]);
+                }
+
+            }
+
+        }
+
+        static void Task14()
+        {
+
+
+            //14) Verilmish metinde butun tek yerde dayanan simvollari ondan sonra gelen simvolun BOYUK formasi ile evez et. 
+
+
+            string text = Console.ReadLine();
+
+            for (int i = 0; i < text.Length - 1; i++)
+            {
+                char x = text[i + 1];
+
+                if (char.IsLetter(x))
+                {
+
+
+
+
+                    if (i % 2 == 0)
+                    {
+
+                        text = text.Remove(i, 1);
+                        text = text.Insert(i, Char.ToUpper(x).ToString());
+
+
+                    }
 
                 }
 
             }
+
+            Console.WriteLine(text);
+
         }
+         
+
+         static void Task16()
+            {
+                for (int a = 0; a <= 10; a++)
+                {
+                    for (int b = 0; b <= 10; b++)
+                    {
+                        Console.WriteLine("{0}x{1}", a, b, a * b);
+                    }
+                    Console.WriteLine();
+                }
+                Console.ReadLine();
+
+
+            }
         }
+
     }
+
+        
+    
 
